@@ -14,8 +14,17 @@
 </head>
 
 <body>
-<!--Login Section-->
+<!--registro Section-->
 	<div class="section" id="section1">
+
+		<div class="logo">
+			<div>
+				<img src="img/gamefest2.png">
+
+			</div>
+
+		</div>
+
   		<div class="login-form">
     		<h1>GAMEFEST</h1>
     		<p>Vas a asistir? Genial! Registrate aqui.</p>
@@ -39,6 +48,52 @@
     		<p>Necesitas Mas Informacion? <a class="scroll" href="#section2">Revisa Aqui &raquo;</a></p>
   		</div>
 	</div>
-<!--END: Login Section-->
+<!--END: registro Section-->
+
+<!--confirmar Section-->
+	<div class="section" id="section3">
+
+  		<div class="conf">
+			<div>
+				<img src="img/gamefest2.png">
+
+			</div>
+
+		</div>
+  		<div class="login-form">
+
+  		<h1>Quieres Verificarte?</h1>
+    		<p>Ohk, No Te Preocupes. Puedes Verificarte Desde Aqui.</p>
+    		<div>
+      			<form class="form-wrapper-01">
+        			<input id="" class="inputbox name" type="text" placeholder="Nombre" />
+        			<p><a href="#" class="button">Verificar <i class="icon-paper-plane"></i></a></p>
+      			</form>
+    		</div>
+    		<hr />
+    		<p>Todo Esta Bien? Genial!</p>
+    		<p><a class="scroll" href="#section1">&laquo; Regresar</a></p>
+  		</div>
+	</div>
+<!--END:-->
+<!--Script  Horizontal Scrolling-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+            $(function() {
+                $('a.scroll').bind('click',function(event){
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 500,'easeInOutExpo');
+                     /* Uncomment this for another scrolling effect */
+					 /*
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);*/
+                    event.preventDefault();
+                });
+            });
+        </script>
 
 </body>
