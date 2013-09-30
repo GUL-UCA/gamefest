@@ -1,0 +1,119 @@
+
+.switcher{
+	position: fixed;
+	width: 190px;
+	left:-190px;
+	top: 50%;
+	background: #eee;
+	height: 300px;
+	margin-top: -200px;
+	font-family: 'Dosis', sans-serif;
+	z-index:500;
+	color:#212121 !important;
+}
+
+.switcher .header{
+	width: 220px;
+	height: 52px;
+	position: relative;
+	border-top:1px solid #fff;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	background: #aaa;
+	line-height: 52px;
+	padding-left:20px;
+}
+
+.switcher .header h2{
+	float:left;
+	color: #fff;
+	text-shadow:1px #ebebeb;
+	text-align: center;
+	margin:0;
+}
+.switcher .header .close{
+	width: 52px;
+	height: 52px;
+	float: right;
+	background: url(../images/switcher-arrow.png) 0 0 transparent no-repeat;
+	text-indent: -9999em;
+}
+.switcher .sw{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.switcher .last{
+	border-bottom: none;
+}
+
+
+.switcher .sw p{
+	padding: 10px;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+}
+.switcher .sw h2{
+	font-size: 14px;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.switcher .sw select{
+	width: 170px;
+	margin: 0 10px;
+}
+
+
+.switcher ul{
+	height: 80px;
+	margin-left:10px;
+}
+
+.switcher ul li{
+	padding: 2px;
+	float: left;
+	width: 70px;
+	height: 30px;
+	border:1px solid #d2d2d2;
+	margin: 0 0 5px 5px;
+}
+
+.switcher ul li a{
+	text-decoration: none;
+	color:#aaa;
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-indent: -9999em;
+}
+
+.switcher h3{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.set-one{
+	width:70px;
+	height:30px;
+	background:url(../images/color-bars.png) 0 0 transparent no-repeat;
+}
+
+.set-two{
+	width:70px;
+	height:30px;
+	background:url(../images/color-bars.png) 0 -30px transparent no-repeat;
+}
+
+.set-three{
+	width:70px;
+	height:30px;
+	background:url(../images/color-bars.png) 0 -60px transparent no-repeat;
+}
+
+.set-four{
+	width:70px;
+	height:30px;
+	background:url(../images/color-bars.png) 0 -90px transparent no-repeat;
+}

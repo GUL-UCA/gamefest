@@ -1,28 +1,178 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  
+  <head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=100">
+  
 	<title>GAMEFEST</title>
+
 	<meta name="description" content="Login Form" />
-	<meta name="keywords" content="flat, flat ui, flat design, login form" />
+	<meta name="keywords" content="flat, flat ui, flat design, login form, gamefest" />
 	<meta name="author" content="GULUCA" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="font/css/fontello.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700' rel='stylesheet' type='text/css'>
+  
+   <!--Javascript-->
+
+  <script type="text/javascript" src="js/modernizr.custom.76931.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.3&amp;sensor=false"></script>
+    <script type="text/javascript" src="js/classList.js"></script>
+    <script type="text/javascript" src="js/placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/kontext.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/rotato.js"></script>
+    
+    <script type="text/javascript" src="js/switcher.js"></script> 
+    <script type="text/javascript" src="js/jQueryRotate.2.2.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+     <!--CSS-->
+
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <link rel="stylesheet" type="text/css" href="font/css/fontello.css" />
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+      
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rotato.css">
+    <link rel="stylesheet" href="css/blue.css">
+    <link rel="stylesheet" href="css/switcher.css">
+    <link rel="stylesheet" href="css/kontext.css">
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          
+      // GOOGLE MAP VARIABLES
+      var _myLatlng   = new google.maps.LatLng(12.125536944759574,-86.27164095640182 ); // Long and Lat of the Location (Pointer and View)
+      
+            // GOOGLE MAP INIT
+            google.maps.event.addDomListener(window, 'load', initialize(_myLatlng));
+            google.maps.event.addDomListener(window, 'resize', function() {
+          map.setCenter(myLatlng);
+      });
+
+      // COUNTDOWN VARIABLES
+      var year = 2013;
+      var month = 10-1; // -1 ile eklenmeli
+      var day = 4;
+      var hour = 10;
+      var min = 54;
+      var sec = 54;
+      var msec = 0;
+      
+      // COUNTDOWN INIT
+      date = new Date(year,month,day,hour,min,sec,msec);
+      $('.countdown').countdown({until: new date});
+      
+
+        });
+
+    </script>
+
 
 </head>
 
 <body>
+  <article class="kontext">
+      <!-- Start Layer One -->
+      <div class="layer one show">
+        <!-- Start Countdown -->
+        <div class="holder">
+          <h1>Aun Estamos Trabajando<br> Proximamente <br>Abriremos! </h1>
+          <div class="countdown"></div>
+          <div class="call-to-action"><a href="javascript:;" class="first notify">REGISTRARME ></a></div>
+        </div>
+      </div>
+
+      <!-- Start Layer Two -->
+      <div class="layer two">
+        <div class="holder two">
+          <div class="call-to-action"><a href="javascript:;" class="second stay-tuned">&lt;  VOLVER</a></div>
+          <!-- Start Notify Me -->
+          <h2>Registrate</h2>
+          <p>Aca Te Puedes Registrar Y Confirmar Tu Asistencia, Tambien Para Participar En La Rifa.</p>
+          <!-- Start Newsletter Form-->
+          <div class="newsletter-holder">
+              <form class="newsletter" action="http://themetica.com/rotato/form.php" method="POST" >
+              <input type="text" name="emailAdress" class="e-mail" placeholder="Enter your name">       <button type="submit" class="notify-btn" id="send">Registrar</button>
+              <span class="error">Alert...</span>
+            </form>
+          </div>
+          <!-- Start Social Icons -->
+          <div id="social">
+            <ul>               <!--you should change href value for the correct link your social accounts. if you don't have account any social area, you can erase related row. -->
+              <li><a href="#" class="twitter"></a></li>
+              <li><a href="#" class="facebook"></a></li>
+              <li><a href="#" class="tumblr"></a></li>
+              <li><a href="#" class="google"></a></li>
+              <li><a href="#" class="dribbble"></a></li>
+              <li><a href="#" class="linkedin"></a></li>
+              <li><a href="#" class="youtube"></a></li>
+              <li><a href="#" class="pinterest"></a></li>
+              <li><a href="#" class="flicker"></a></li>
+            </ul>
+          </div>
+          <div class="call-to-action"><a href="javascript:;" class="second get-in-touch">Informacion ></a></div>
+        </div>
+      </div>-->
+      <!-- Start Layer Three -->
+      <div class="layer three">
+        <!-- Start Google Maps  -->
+        <div id="googleMap" style="width: 100%; height: 100%;">
+        </div>
+        <!-- Start Contact Info -->
+        <div class="contact-info">
+          <div class="call-to-action"><a href="javascript:;" class="third notify">&lt; REGRESAR</a></div>
+          <h1>Asiste Y Disfruta Con Nosotros</h1>
+          <div class="address-container">
+            <h2>Buscanos En</h2>
+            <div class="address">
+              Edificio R, Auditorio Ponsol,
+              UCa, Managua,
+              Nicaragua
+            </div>
+            <div class="phones">
+              Tel: (505) 8635 2221 <br/>
+              Event: <a href="http://on.fb.me/14W39UQ" >Website <br/>
+              E-mail: <a href="mailto:oscar@guluca.org" >GULUCA Mail</a>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </article>  
+    
 <!--registro Section-->
-	<div class="section" id="section1">
+
+	<!--<div class="section" id="section1">
 
 		<div class="logo">
 			<div>
 				<img src="img/gamefest2.png">
 
 			</div>
-
+      <div>
+        <h1>Sponsors</h1>
+        <table width="200" border="0" id="data">
+           <tr>
+               <th>Alumno</th>
+               <th>Calificaci&oacute;n</th>
+           </tr>
+           <tr>
+               <td>Juan</td>
+                <td>85</td>
+           </tr>
+        </table>
+      </div>
 		</div>
 
   		<div class="login-form">
@@ -51,7 +201,7 @@
 <!--END: registro Section-->
 
 <!--confirmar Section-->
-	<div class="section" id="section3">
+<!--	<div class="section" id="section3">
 
   		<div class="conf">
 			<div>
@@ -74,9 +224,11 @@
     		<p>Todo Esta Bien? Genial!</p>
     		<p><a class="scroll" href="#section1">&laquo; Regresar</a></p>
   		</div>
-	</div>
+	</div>-->
 <!--END:-->
-<!--Script  Horizontal Scrolling-->
+<!-- Start Layer Three -->
+
+<!--Script  Horizontal Scrolling
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript">
@@ -85,7 +237,7 @@
                     var $anchor = $(this);
                     $('html, body').stop().animate({
                         scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 500,'easeInOutExpo');
+                    }, 500,'easeInOutExpo');-->
                      /* Uncomment this for another scrolling effect */
 					 /*
                     $('html, body').stop().animate({
@@ -97,3 +249,4 @@
         </script>
 
 </body>
+</html>

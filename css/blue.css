@@ -1,0 +1,44 @@
+.layer.one {
+	background: #008BDF;
+}
+
+.layer.one .countdown .countdown_section{
+	color:#008BDF;
+}
+
+.layer.two {
+	background: #FF4B31;
+}
+
+
+input[placeholder], [placeholder], *[placeholder] {
+   color:#FF4B39 !important;
+}
+
+.layer.two .newsletter .notify-btn{
+	background:#FF4B39;
+}
+
+.layer.two .newsletter .e-mail{
+	color: #FF4B39;
+}
+
+.address-container > .phones a, .address-container > .phones a:hover{
+	color:#FF4B31;
+}
+
+.first{
+	color:#008BDF;
+}
+
+.second{
+	color:#FF4B39;
+}
+
+.third{
+	color:#212121;
+}
+
+.third:hover{
+	color:#fff;
+}
