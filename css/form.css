@@ -1,141 +1,102 @@
-.layer.two {
-	background: #FF4B31;
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }
 
+/* ---------- GENERAL ---------- */
 
-input[placeholder], [placeholder], *[placeholder] {
-   color:#FF4B39 !important;
+body {
+	background-color: #C0C0C0;
+	color: #000;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
 }
 
-.layer.two .newsletter .notify-btn{
-	background:#FF4B39;
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
 }
 
-.layer.two .newsletter .e-mail{
-	color: #FF4B39;
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 50px auto;
+	width: 400px;
 }
 
-
-
-.layer.two h2{
-	font-size:80px;
-	margin-top:80px;	
+#login h2 {
+	background-color: #f95252;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 26px;
 }
 
-.layer.two p{
-	font-size:22px;
-	width:70%;
-	text-align:center;
-	margin:0 auto;
-	padding:20px 0;
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
 }
 
-.layer.two .newsletter-holder{
-	width:540px;
-	background:#212121;
-	margin:0 auto;
-	height:55px;
-	padding:10px;
+#login fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
 }
 
-.layer.two .newsletter .notify-btn{
-	width:120px;
-	margin:0 auto;
-	height:55px;
-	display:block;	
-	border:medium none;
-	float:left;
-	font-family: Amatic;
-	font-size:40px;
-	cursor:pointer;
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
 }
 
-.layer.two .newsletter .e-mail{
-	width: 407px;
-	float: left;
-	height: 53px;
-	margin-right: 10px;
-	background: none;
-	border: medium none;
-	font-family: Amatic;
-	font-size: 40px;
+#login fieldset p:last-child {
+	margin-bottom: 0;
 }
 
-
-/* === Social === */
-#social{
-	width: 58.8%;
-	height:30px;
-	margin: 10px auto 80px;
-}
-#social ul{
-	float:right;
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
-#social ul li{
-	float: left;
-	width: 30px;
-	height: 30px;
+#login fieldset input[type="email"], #login fieldset input[type="text"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+	color: #fff;
 	display: block;
-	margin-right: 2px;
-}
-#social ul li a{
-	width: 100%;
-	height: 100%;
-	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
 }
 
-#social ul li a.twitter{
-	background: url(../images/social-icons.png) 0 0 transparent no-repeat;
-}
-#social ul li a.facebook{
-	background: url(../images/social-icons.png) -32px 0 transparent no-repeat;
-}
-#social ul li a.tumblr{
-	background: url(../images/social-icons.png) -64px 0 transparent no-repeat;
-}
-#social ul li a.google{
-	background: url(../images/social-icons.png) -96px 0 transparent no-repeat;
-}
-#social ul li a.dribbble{
-	background: url(../images/social-icons.png) -128px 0 transparent no-repeat;
-}
-#social ul li a.linkedin{
-	background: url(../images/social-icons.png) -160px 0 transparent no-repeat;
-}
-#social ul li a.youtube{
-	background: url(../images/social-icons.png) -192px 0 transparent no-repeat;
-}
-#social ul li a.pinterest{
-	background: url(../images/social-icons.png) -224px 0 transparent no-repeat;
-}
-#social ul li a.flicker{
-	background: url(../images/social-icons.png) -256px 0 transparent no-repeat;
-}
-#social ul li a.twitter:hover{
-	background: url(../images/social-icons.png) 0 -30px #212121 no-repeat;
-}
-#social ul li a.facebook:hover{
-	background: url(../images/social-icons.png) -32px -30px #212121 no-repeat;
-}
-#social ul li a.tumblr:hover{
-	background: url(../images/social-icons.png) -64px -30px #212121 no-repeat;
-}
-#social ul li a.google:hover{
-	background: url(../images/social-icons.png) -96px -30px #212121 no-repeat;
-}
-#social ul li a.dribbble:hover{
-	background: url(../images/social-icons.png) -128px -30px #212121 no-repeat;
-}
-#social ul li a.linkedin:hover{
-	background: url(../images/social-icons.png) -160px -30px #212121 no-repeat;
-}
-#social ul li a.youtube:hover{
-	background: url(../images/social-icons.png) -192px -30px #212121 no-repeat;
-}
-#social ul li a.pinterest:hover{
-	background: url(../images/social-icons.png) -224px -30px #212121 no-repeat;
-}
-#social ul li a.flicker:hover{
-	background: url(../images/social-icons.png) -256px -30px #212121 no-repeat;
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
 }
