@@ -1,0 +1,141 @@
+.layer.two {
+	background: #FF4B31;
+}
+
+
+input[placeholder], [placeholder], *[placeholder] {
+   color:#FF4B39 !important;
+}
+
+.layer.two .newsletter .notify-btn{
+	background:#FF4B39;
+}
+
+.layer.two .newsletter .e-mail{
+	color: #FF4B39;
+}
+
+
+
+.layer.two h2{
+	font-size:80px;
+	margin-top:80px;	
+}
+
+.layer.two p{
+	font-size:22px;
+	width:70%;
+	text-align:center;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+.layer.two .newsletter-holder{
+	width:540px;
+	background:#212121;
+	margin:0 auto;
+	height:55px;
+	padding:10px;
+}
+
+.layer.two .newsletter .notify-btn{
+	width:120px;
+	margin:0 auto;
+	height:55px;
+	display:block;	
+	border:medium none;
+	float:left;
+	font-family: Amatic;
+	font-size:40px;
+	cursor:pointer;
+}
+
+.layer.two .newsletter .e-mail{
+	width: 407px;
+	float: left;
+	height: 53px;
+	margin-right: 10px;
+	background: none;
+	border: medium none;
+	font-family: Amatic;
+	font-size: 40px;
+}
+
+
+/* === Social === */
+#social{
+	width: 58.8%;
+	height:30px;
+	margin: 10px auto 80px;
+}
+#social ul{
+	float:right;
+}
+
+#social ul li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin-right: 2px;
+}
+#social ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#social ul li a.twitter{
+	background: url(../images/social-icons.png) 0 0 transparent no-repeat;
+}
+#social ul li a.facebook{
+	background: url(../images/social-icons.png) -32px 0 transparent no-repeat;
+}
+#social ul li a.tumblr{
+	background: url(../images/social-icons.png) -64px 0 transparent no-repeat;
+}
+#social ul li a.google{
+	background: url(../images/social-icons.png) -96px 0 transparent no-repeat;
+}
+#social ul li a.dribbble{
+	background: url(../images/social-icons.png) -128px 0 transparent no-repeat;
+}
+#social ul li a.linkedin{
+	background: url(../images/social-icons.png) -160px 0 transparent no-repeat;
+}
+#social ul li a.youtube{
+	background: url(../images/social-icons.png) -192px 0 transparent no-repeat;
+}
+#social ul li a.pinterest{
+	background: url(../images/social-icons.png) -224px 0 transparent no-repeat;
+}
+#social ul li a.flicker{
+	background: url(../images/social-icons.png) -256px 0 transparent no-repeat;
+}
+#social ul li a.twitter:hover{
+	background: url(../images/social-icons.png) 0 -30px #212121 no-repeat;
+}
+#social ul li a.facebook:hover{
+	background: url(../images/social-icons.png) -32px -30px #212121 no-repeat;
+}
+#social ul li a.tumblr:hover{
+	background: url(../images/social-icons.png) -64px -30px #212121 no-repeat;
+}
+#social ul li a.google:hover{
+	background: url(../images/social-icons.png) -96px -30px #212121 no-repeat;
+}
+#social ul li a.dribbble:hover{
+	background: url(../images/social-icons.png) -128px -30px #212121 no-repeat;
+}
+#social ul li a.linkedin:hover{
+	background: url(../images/social-icons.png) -160px -30px #212121 no-repeat;
+}
+#social ul li a.youtube:hover{
+	background: url(../images/social-icons.png) -192px -30px #212121 no-repeat;
+}
+#social ul li a.pinterest:hover{
+	background: url(../images/social-icons.png) -224px -30px #212121 no-repeat;
+}
+#social ul li a.flicker:hover{
+	background: url(../images/social-icons.png) -256px -30px #212121 no-repeat;
+}
